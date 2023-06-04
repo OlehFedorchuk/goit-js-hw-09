@@ -55,8 +55,11 @@ function convertMs(ms) {
   const minutes = Math.floor(((ms % day) % hour) / minute);
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
 
-  spanDaysEl.textContent = days;
-  spanHoursEl.textContent = hours;
-  spanMinutsEl.textContent = minutes;
-  spanSecondsEl.textContent = seconds;
+  spanDaysEl.textContent = addLeadingZero(days);
+  spanHoursEl.textContent = addLeadingZero(hours);
+  spanMinutsEl.textContent = addLeadingZero(minutes);
+  spanSecondsEl.textContent = addLeadingZero(seconds);
+}
+function addLeadingZero(value) {
+  return value.toString().padStart(2, '0');
 }
