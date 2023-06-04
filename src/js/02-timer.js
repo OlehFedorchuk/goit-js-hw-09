@@ -55,12 +55,12 @@ function convertMs(ms) {
   const minutes = Math.floor(((ms % day) % hour) / minute);
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
 
-  spanDaysEl.textContent = days;
-  spanHoursEl.textContent = hours;
-  spanMinutsEl.textContent = minutes;
-  spanSecondsEl.textContent = seconds;
+  // spanDaysEl.textContent = days;
+  // spanHoursEl.textContent = hours;
+  // spanMinutsEl.textContent = minutes;
+  // spanSecondsEl.textContent = seconds;
 }
-spanDaysEl = document.querySelector('[data-days]');
-spanHoursEl = document.querySelector('[data-hours]');
-spanMinutsEl = document.querySelector('[data-minutes]');
-spanSecondsEl = document.querySelector('[data-seconds]');
+// spanDaysEl = document.querySelector('[data-days]');
+// spanHoursEl = document.querySelector('[data-hours]');
+// spanMinutsEl = document.querySelector('[data-minutes]');
+// spanSecondsEl = document.querySelector('[data-seconds]');
