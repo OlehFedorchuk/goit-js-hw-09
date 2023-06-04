@@ -1,4 +1,5 @@
 import flatpickr from 'flatpickr';
+import 'flatpickr/dist/flatpickr.min.css';
 
 spanDaysEl = document.querySelector('[data-days]');
 spanHoursEl = document.querySelector('[data-hours]');
