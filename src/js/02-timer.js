@@ -1,5 +1,9 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+const spanDaysEl = document.querySelector('span[data-days]');
+const spanHoursEl = document.querySelector('span[data-hours]');
+const spanMinutsEl = document.querySelector('span[data-minutes]');
+const spanSecondsEl = document.querySelector('span[data-seconds]');
 
 const options = {
   enableTime: true,
@@ -49,10 +53,6 @@ function convertMs(ms) {
   const hours = Math.floor((ms % day) / hour);
   const minutes = Math.floor(((ms % day) % hour) / minute);
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
-  spanDaysEl = document.querySelector('span[data-days]');
-  spanHoursEl = document.querySelector('span[data-hours]');
-  spanMinutsEl = document.querySelector('span[data-minutes]');
-  spanSecondsEl = document.querySelector('span[data-seconds]');
 
   spanDaysEl.textContent = days;
   spanHoursEl.textContent = hours;
