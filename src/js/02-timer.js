@@ -1,11 +1,6 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
-spanDaysEl = document.querySelector('[data-days]');
-spanHoursEl = document.querySelector('[data-hours]');
-spanMinutsEl = document.querySelector('[data-minutes]');
-spanSecondsEl = document.querySelector('[data-seconds]');
-
 const options = {
   enableTime: true,
   time_24hr: true,
