@@ -60,3 +60,7 @@ function convertMs(ms) {
   spanMinutsEl.textContent = minutes;
   spanSecondsEl.textContent = seconds;
 }
+spanDaysEl = document.querySelector('[data-days]');
+spanHoursEl = document.querySelector('[data-hours]');
+spanMinutsEl = document.querySelector('[data-minutes]');
+spanSecondsEl = document.querySelector('[data-seconds]');
