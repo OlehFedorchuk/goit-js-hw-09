@@ -49,10 +49,10 @@ function convertMs(ms) {
   const hours = Math.floor((ms % day) / hour);
   const minutes = Math.floor(((ms % day) % hour) / minute);
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
-  spanDaysEl = document.querySelector('[data-days]');
-  spanHoursEl = document.querySelector('[data-hours]');
-  spanMinutsEl = document.querySelector('[data-minutes]');
-  spanSecondsEl = document.querySelector('[data-seconds]');
+  spanDaysEl = document.querySelector('span[data-days]');
+  spanHoursEl = document.querySelector('span[data-hours]');
+  spanMinutsEl = document.querySelector('span[data-minutes]');
+  spanSecondsEl = document.querySelector('span[data-seconds]');
 
   spanDaysEl.textContent = days;
   spanHoursEl.textContent = hours;
