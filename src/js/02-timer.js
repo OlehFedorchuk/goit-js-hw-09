@@ -4,6 +4,7 @@ const spanDaysEl = document.querySelector('span[data-days]');
 const spanHoursEl = document.querySelector('span[data-hours]');
 const spanMinutsEl = document.querySelector('span[data-minutes]');
 const spanSecondsEl = document.querySelector('span[data-seconds]');
+const btnEl = (document.querySelector('button[data-start]').disabled = true);
 
 const options = {
   enableTime: true,
@@ -16,7 +17,7 @@ const options = {
     if (selectedDate.getTime() < Date.now()) {
       window.alert('Please choose a date in the future');
     } else {
-      document.querySelector('[data-start]').disabled = false;
+      document.querySelector('button[data-start]').disabled = false;
       document
         .querySelector('[data-start]')
         .addEventListener('click', function () {
