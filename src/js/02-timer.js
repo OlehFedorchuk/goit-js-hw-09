@@ -1,6 +1,6 @@
 import flatpickr from 'flatpickr';
 
-spanDaysEl = document.querySelector('[data-days');
+spanDaysEl = document.querySelector('[data-days]');
 spanHoursEl = document.querySelector('[data-hours]');
 spanMinutsEl = document.querySelector('[data-minutes]');
 spanSecondsEl = document.querySelector('[data-seconds]');
